@@ -38,7 +38,7 @@ model = MultinomialNB().fit(X_train,y_train)
 
 y_pred = model.predict(X_test)
 
-Input_values = 
+
 
 import streamlit as st
 import numpy as np
