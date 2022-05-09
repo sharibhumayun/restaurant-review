@@ -44,11 +44,11 @@ import streamlit as st
 import numpy as np
 
 
-def Sentiment analysis(Input_values):
+def Sentiment analysis(X_test):
    
-    Input_values = np.asarray(Input_values)
+    Input_values = np.asarray(X_test)
     Input_values = Input_values.reshape(1,-1)
-    y_pred1 = model.predict(Input_values)
+    y_pred1 = model.predict(X_test)
     y_pred1
     
     
@@ -56,7 +56,7 @@ def main():
     st.title('**Restaurant review**')
     
     
-    st.sidebar.title('Touchpoint CSAT')  
+  
    
     Review = st.text_input('Review')
     
